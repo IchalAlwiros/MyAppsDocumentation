@@ -1,19 +1,36 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_basic_forme/drawerpage.dart/drawwer.dart';
+import 'package:flutter_basic_forme/pages/Dashboard/itemDashboard.dart';
+import 'package:flutter_basic_forme/pages/DatePicker/datePicker.dart';
+import 'package:flutter_basic_forme/pages/Model/model.dart';
+import 'package:flutter_basic_forme/pages/bwabasic/bwabasic1.dart';
+import 'package:flutter_basic_forme/pages/bwabasic/ratatengahrow.dart';
 import 'package:flutter_basic_forme/pages/card_button.dart';
+import 'package:flutter_basic_forme/pages/chat/chat.dart';
 import 'package:flutter_basic_forme/pages/decoration_text.dart';
 import 'package:flutter_basic_forme/pages/dialog%20pages/dialog.dart';
 import 'package:flutter_basic_forme/pages/dismissible.dart';
+import 'package:flutter_basic_forme/pages/drawerpage.dart/drawwer.dart';
+import 'package:flutter_basic_forme/pages/expandedFlexible/expanded_flexible.dart';
+import 'package:flutter_basic_forme/pages/expandedFlexible/fitted.dart';
 import 'package:flutter_basic_forme/pages/extract_widget.dart';
 import 'package:flutter_basic_forme/pages/field_text.dart';
+import 'package:flutter_basic_forme/pages/future_builder/List_Api/get_api.dart';
+import 'package:flutter_basic_forme/pages/future_builder/future_builder.dart';
 import 'package:flutter_basic_forme/pages/grid_view.dart';
+import 'package:flutter_basic_forme/pages/layoutbuilder/layoutBuilder.dart';
 import 'package:flutter_basic_forme/pages/list_View.dart';
 import 'package:flutter_basic_forme/pages/mapping_list.dart';
+import 'package:flutter_basic_forme/pages/mediaQuery/mediaQuery.dart';
 import 'package:flutter_basic_forme/pages/media_Query.dart';
+import 'package:flutter_basic_forme/pages/opener/opener.dart';
 import 'package:flutter_basic_forme/pages/push_push.dart';
+import 'package:flutter_basic_forme/pages/scrollcontroller/scrollcontroller.dart';
+import 'package:flutter_basic_forme/pages/scrorlstact.dart/scrolstack.dart';
+import 'package:flutter_basic_forme/pages/shimmer/news_page.dart';
 import 'package:flutter_basic_forme/pages/sliver_appBar.dart';
 import 'package:flutter_basic_forme/pages/spacer_app.dart';
 import 'package:flutter_basic_forme/pages/state_fullWidget.dart';
+import 'package:flutter_basic_forme/pages/switch.dart';
 import 'package:flutter_basic_forme/pages/tab_Bar.dart';
 
 class CardWidget extends StatelessWidget {
@@ -72,6 +89,21 @@ class ListCard extends StatelessWidget {
   ListView _buildListView(BuildContext context) {
     final List<Widget> page = [
       //RoundedList()
+      //MyApp(),
+      NewsPage(),
+      MyApp(),
+      Dashboard(),
+      ProjectDashboard(),
+      LayoutBuilderku(),
+      DatePickerku(),
+      FittedKu(),
+      MyExpandedPage(),
+      GetApi(),
+      FutureBuild(),
+      ModelsKu(),
+      AppsMediaQuery(),
+      SwitchKu(),
+      Chat(true, 'Hallaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'),
       SliverApp(),
       MappingList(),
       MyListView(),
@@ -85,6 +117,8 @@ class ListCard extends StatelessWidget {
       DekorasiText(),
       Extracwitget(),
       PushPop(),
+      Property(),
+      Property2(),
       Fieldtxt(),
       TaBBar(),
       GriDView(),

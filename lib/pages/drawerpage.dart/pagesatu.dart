@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_basic_forme/drawerpage.dart/settingpage.dart';
+import 'package:flutter_basic_forme/pages/drawerpage.dart/settingpage.dart';
 
 class PageSatu extends StatelessWidget {
   @override
@@ -57,7 +57,7 @@ class PageSatu extends StatelessWidget {
                 },
                 leading: Icon(Icons.settings,size: 30,),
                 title: Text(
-                  'Home',
+                  'Setting',
                   style: TextStyle(
                     color: Colors.orangeAccent, 
                     fontSize: 20),

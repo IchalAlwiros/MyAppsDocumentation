@@ -1,22 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_basic_forme/drawerpage.dart/pagesatu.dart';
+import 'package:flutter_basic_forme/pages/drawerpage.dart/pagesatu.dart';
 
-class Drawwer extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: HomePageku(),
-    );
-  }
-}
-
-class HomePageku extends StatelessWidget {
+class SettingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Drawwer'),
+          title: Text('Setting'),
           centerTitle: true,
           flexibleSpace: Container(
             decoration: BoxDecoration(
@@ -60,9 +50,14 @@ class HomePageku extends StatelessWidget {
                 ),
               ),
               ListTile(
+                onTap: (){
+                  Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) => SettingPage() ,),
+                  );
+                },
                 leading: Icon(Icons.settings,size: 30,),
                 title: Text(
-                  'Home',
+                  'Setting',
                   style: TextStyle(
                     color: Colors.orangeAccent, 
                     fontSize: 20),

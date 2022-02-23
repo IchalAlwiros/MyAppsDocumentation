@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basic_forme/pages/Dashboard/itemDashboard.dart';
 import 'package:flutter_basic_forme/pages/alist_myCard.dart';
 
 class loginPage extends StatelessWidget {
@@ -23,7 +24,7 @@ class loginPage extends StatelessWidget {
                   Navigator.of(context).pushReplacement(
                     MaterialPageRoute(
                       builder: (context) {
-                        return ListCard();
+                        return ProjectDashboard();
                       },
                     ),
                   );
